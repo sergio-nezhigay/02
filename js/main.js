@@ -1,5 +1,7 @@
-const name = prompt("Enter your name...").trim();
-const surname = prompt("Enter your surname...").trim();
+let firstName = prompt("Enter your name...").trim();
+firstName = firstName[0].toUpperCase() + firstName.slice(1);
+let surname = prompt("Enter your surname...").trim();
+surname = surname[0].toUpperCase() + surname.slice(1);
 let email = prompt("Enter your email...").replaceAll("\\s+", "").toLowerCase();
 if (!email.includes("@"))
   email = `not valid email <b>${email}</b> (symbol @ not exist)`;
@@ -16,7 +18,7 @@ const age = currentYear - year;
 
 document.write(
   `<h2>
-    Full name: ${name} ${surname}<br>
+    Full Name: ${firstName} ${surname}<br>
     Email: ${email}<br>
     Age: ${age}
   </h2>`
