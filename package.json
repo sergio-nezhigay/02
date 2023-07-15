@@ -1,0 +1,30 @@
+{
+  "name": "03-nezhigay-serhiy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "cross-env node server.js sergey=kasha dima=borsch",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergio-nezhigay/02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergio-nezhigay/02/issues"
+  },
+  "homepage": "https://github.com/sergio-nezhigay/02#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^29.6.1"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  }
+}

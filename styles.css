@@ -1,79 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+button,
+button:active,
+button:focus,
+input {
+  border: 0;
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-}
-
-form {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type="number"] {
   width: 100%;
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  height: 100%;
+  background-color: #8ebe96;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
-button[type="submit"],
-#generateTableButton {
-  padding: 8px 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#result {
-  margin-bottom: 20px;
-}
-
-#finalResult {
-  margin-top: 20px;
-}
-
-#finalResult table {
-  border-collapse: collapse;
+/* ======================== */
+/* add
+/* ======================== */
+.add {
   width: 100%;
+  height: 70px;
+  background-color: rgb(80, 120, 156);
+  display: flex;
+}
+.add__input {
+  width: calc(100% - 95px);
+  height: 40px;
+  margin: 15px 15px 0 15px;
+  padding: 15px;
+  border-radius: 5px;
+  color: rgb(2, 106, 124);
+}
+.add__btn {
+  margin-top: 15px;
 }
 
-#finalResult th,
-#finalResult td {
-  padding: 8px;
-  border: 1px solid #ddd;
+/* ======================== */
+/* item
+/* ======================== */
+.item {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-bottom: 10px;
+  padding: 5px;
+  border-bottom: 1px solid #8ebe96;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-#finalResult th {
-  text-align: left;
-  background-color: #f2f2f2;
-  cursor: pointer;
-}
-
-#finalResult th.sortable::after {
-  content: "";
+.item__text {
   display: inline-block;
-  vertical-align: middle;
-  margin-left: 5px;
-  width: 0;
-  height: 0;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
+  width: calc(100% - 65px);
+  height: 50px;
+  padding: 10px;
+  color: rgb(2, 124, 87);
 }
-
-#finalResult th.sortable.asc::after {
-  border-top: 4px solid #000;
+button {
+  display: block;
+  width: 50px;
+  height: 40px;
+  /* position: absolute; */
+  margin: 10px 0;
+  background-color: #8ebe96;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
 }
-
-#finalResult th.sortable.desc::after {
-  border-bottom: 4px solid #000;
+button:hover {
+  background: rgb(209, 209, 17);
 }
